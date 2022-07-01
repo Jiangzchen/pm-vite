@@ -1,0 +1,16 @@
+//common.scss
+//用以绽开全屏
+html,body,#app,.page-container{  width:100%;  height:100%;  margin: 0;}
+//用以关掉不必要的滑动条，可以不加
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: hsla(220, 4%, 58%, .3);
+}

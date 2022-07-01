@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true, // 启用装饰器
+    "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入
+    "target": "esnext", // 编译输出目标ES版本
+    "module": "esnext", // 采用的模块系统
+    "strict": true, // 以严格模式解析
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "sourceMap": true, // 是否包含可以用于 debug 的 sourceMap
+    "noImplicitThis": false, // 忽略 this 的类型检查, Raise error on this expressions with an implied any type.
+    "suppressImplicitAnyIndexErrors":true,
+    "types": [
+      "unplugin-vue2-script-setup/types"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+  },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
+  }
+}
